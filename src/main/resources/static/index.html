@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>TicTacToe WS - Embedded UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- React + Babel (sin build) -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; padding:20px;}
+    .board-row:after { clear: both; content: ""; display: table; }
+    .square { background:#fff; border:1px solid #999; float:left; font-size:24px; height:34px; line-height:34px; margin-right:-1px; margin-top:-1px; padding:0; text-align:center; width:34px; cursor:pointer; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel" src="js/app.jsx"></script>
+</body>
+</html>
